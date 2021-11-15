@@ -17,6 +17,7 @@
 body {
     font-family: 'Be Vietnam', sans-serif;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 nav {
@@ -293,11 +294,18 @@ nav button {
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     margin-left: 15px;
-    margin-right: 15px;
 }
 
 .banners-pequeños2 img {
-    width: 100%;
-    height: 90%;
+    width: 400px;
+    height: 250px;
     border-radius: 10px;
+}
+
+/* ANUNCIO DE PRÓXIMO RECITAL */
+
+.banner-recital img {
+    margin-top: 25px;
+    width: 100%;
+    height: 100px;
 }
