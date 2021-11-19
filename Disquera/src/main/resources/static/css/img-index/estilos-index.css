@@ -1,0 +1,94 @@
+:root {
+    --rojoBrillante: rgb(242, 95, 58);
+    --azulOscuro: rgb(35, 44, 81);
+    --azulGrisaceo: rgb(143, 148, 167);
+    --azulMuyOscuro: rgb(29, 30, 37);
+    --roloPalido: rgb(255, 239, 234);
+    --grisClaro: rgb(249, 249, 249);
+    --blancoNatural: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 65px 100px;
+ 
+}
+
+figure {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+
+figure img {
+    width: 20px;
+}
+
+figure h1 {
+    font-size: 2rem;
+    color: var(--azulOscuro);
+    font-weight: bold;
+
+}
+
+
+
+nav ul {
+    display: inline-flex;
+    font-weight: 600;
+    list-style: none;
+}
+
+li a {
+    align-items: center;
+    color: var(--azulOscuro);
+    text-decoration: none;
+    padding: 10px 20px 10px 0px;
+    font-weight: inherit;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    margin-right: 10px;
+}
+
+li a::after {
+    content: "";
+    display: inline-flex;
+    background: var(--rojoBrillante);
+    width: 60%;
+    position: relative;
+    bottom: 10px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
+
+}
+
+li a:hover {
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+nav button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 50px;
+    border: none;
+    background-color:rgb(112, 13, 13);
+    color: var(--blancoNatural);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
