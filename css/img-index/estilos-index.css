@@ -91,36 +91,35 @@ nav button {
 
 /* HEADER Y NAV */
 
-nav {
+.header nav {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-top: 35px;
 }
 
-figure {
+.header figure {
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
 }
 
-figure img {
+.header figure img {
     width: 20px;
 }
 
-figure h1 {
+.header figure h1 {
     font-size: 2rem;
     color: var(--azulOscuro);
     font-weight: bold;
 }
 
-nav ul {
+.header nav ul {
     display: inline-flex;
     font-weight: 600;
     list-style: none;
 }
 
-li a {
+.header li a {
     align-items: center;
     color: var(--azulOscuro);
     text-decoration: none;
@@ -130,7 +129,7 @@ li a {
     margin-right: 10px;
 }
 
-li a::after {
+.header li a::after {
     content: "";
     display: inline-flex;
     background: var(--rojoBrillante);
@@ -142,7 +141,7 @@ li a::after {
     transition: clip-path .3s;
 }
 
-li a:hover {
+.header li a:hover {
     --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -308,4 +307,173 @@ nav button {
     margin-top: 25px;
     width: 100%;
     height: 100px;
+    margin-bottom: 40px;
+}
+
+/* SECCIÓN DE 5 MEJORES DISCOS */
+
+.top5-container {
+	background-image: url(/images/billie.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.top5 {
+	text-transform: uppercase;
+	text-decoration: underline;
+	margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+.discos-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+	text-align: center;
+}
+
+.discos-container a {
+	color: #000000;
+	text-decoration: none;
+	text-align: left;
+}
+
+.portada {
+	width: 200px;
+	height: 180px;
+	padding-bottom: 5px;
+}
+
+.titulo {
+	padding-bottom: 5px;
+	margin-left: 20px;
+	text-transform: uppercase;
+}
+
+.autor {
+	color: red;
+	padding-bottom: 5px;
+	font-size: 17px;
+	margin-left: 20px;
+}
+
+.autor:hover {
+	text-decoration: underline;
+}
+
+.precio {
+	margin-left: 20px;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.separador {
+	margin-bottom: 5px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.salto {
+	border: #000000 solid 1px;
+}
+
+/* ENVÍOS Y NUESTRO LOCAL */
+
+.envios-local {
+	display: flex;
+    margin-bottom: 50px;
+}
+
+.envios img {
+	width: 900px;
+	height: 350px;
+	margin-top: 50px;
+	margin-left: 20px;
+	margin-right: 50px;
+}
+
+.local img {
+	width: 350px;
+	height: 350px;
+	margin-top: 50px;
+}
+
+/* FOOTER */
+
+.footer-hr {
+    border: #000000 dashed 2px;
+}
+
+.footer-container {
+    display: flex;
+    margin: 20px 0 15px 0;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+.footer-item h4 {
+    padding-bottom: 10px;
+}
+
+.footer-item a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.redes {
+    background-color: #f7f4f4;
+}
+
+.redes p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #000000;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 30px;
+    color: #000000;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.links a i {
+    font-size: 3rem;
+}
+
+.derechos-hr {
+    border: #000000 dashed 2px;
+}
+
+.footer-derechos {
+    background: #f7f4f4;
+    color: #616161;
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.footer-derechos p {
+    color: #000000;
+    text-align: left;
+    margin-left: 25px;
+    padding-bottom: 5px;
+    font-size: 15px;
+
+}
+
+.footer-derechos img {
+    width: 70px;
 }
